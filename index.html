@@ -1,14 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/index.css">
+    <link rel="stylesheet" href="./assets/index.css" />
     <title>Balance DOM</title>
   </head>
   <body>
-
+    <main>
+      <section class="bg-[#2C2C2C] py-10">
+        <div class="flex flex-col justify-center items-center gap-y-2">
+          <div>Hello</div>
+          <img src="./assets/images/profile-photo.svg" class="w-[70px]" />
+          <div class="flex flex-col items-center">
+            <span>Welcome,</span>
+            <span>Shajid Shafee</span>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[#F2F2FC]">
+        <h2>Good Morning, Shajid Shafee</h2>
+        <div>
+          <!-- ! Card 1 -->
+          <div class="w-[286px] border rounded-lg px-3 py-3 border-[#FDDA20] bg-white">
+            <div class="flex items-center justify-between">
+              <img src="./assets/images/master-card.png" class="w-[70px]" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#888888"
+                  d="M12 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2Z"
+                />
+              </svg>
+            </div>
+            <div class="font-bold text-4xl mb-2">$102,000.00</div>
+            <div class="pb-2">Your bank balance</div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="./assets/main.js"></script>
   </body>
