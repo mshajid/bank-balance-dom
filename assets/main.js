@@ -1,18 +1,42 @@
+// Should add numbers only without any texts.
+// Then It should equal with the card # 1 which is deposite
+
 const depositEl = document.querySelector("#depositInput");
 const debitedEl = document.querySelector("#debitedInput");
 const intraEl = document.querySelector("#intraInput");
+
+// Buttons Added. 
 const depositBtn = depositEl.nextElementSibling;
+const debitedBtn = debitedEl.nextElementSibling;
+const intraBtn = intraEl.nextElementSibling;
 
-const depositAmountEl = document.querySelector("#depositAmount");
+let depositAmountEl = document.querySelector("#depositAmount");
 
-// Should add numbers only without any texts.
-depositBtn.addEventListener("click", () => {
-  const convertDepositEl = parseInt(depositEl.value);
-  const depositAmountConvert = parseInt(depositAmountEl.textContent);
-  const finalDepositedAmount = convertDepositEl + depositAmountConvert;
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ! Vasanth's Suggestion on Concat the empty string + Number
+// depositBtn.addEventListener("click", () => {
+//   // let depositAmountConvert = 0;
+//   if (depositAmountEl.innerText.trim() === '') {
+//     let depositAmountConvert = 0;
+//   } else {
+//     let depositAmountConvert = parseInt(depositAmountEl.innerText);
+//   };
+
+//   const convertDepositEl = parseInt(depositEl.value);
+//   const finalDepositedAmount = depositAmountConvert + convertDepositEl;
+//   depositAmountEl.innerText = finalDepositedAmount;
   
-  depositAmountEl.innerHTML = finalDepositedAmount
+// });
 
-});
-
-// Then It should equal with the card # 1 which is deposited.
