@@ -18,8 +18,11 @@ depositBtn.addEventListener("click", () => {
   let depositElNum = parseInt(depositEl.value)
   let depositAmountNum = parseInt(depositAmountEl.textContent);
   const finalOutput = depositElNum + depositAmountNum;
+  depositAmountEl.textContent = finalOutput;
 
-  depositAmountEl.textContent = finalOutput
+  if(depositElNum){
+    confirm(`You want to deposit ${depositElNum}`)
+  }
 })
 
 
