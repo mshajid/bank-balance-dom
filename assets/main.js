@@ -13,6 +13,15 @@ const intraBtn = intraEl.nextElementSibling;
 let depositAmountEl = document.querySelector("#depositAmount");
 
 
+depositBtn.addEventListener("click", () => {
+  // console.log(typeof depositEl.value);
+  let depositElNum = parseInt(depositEl.value)
+  let depositAmountNum = parseInt(depositAmountEl.textContent);
+  const finalOutput = depositElNum + depositAmountNum;
+
+  depositAmountEl.textContent = finalOutput
+})
+
 
 
 
