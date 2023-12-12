@@ -15,13 +15,13 @@ let depositAmountEl = document.querySelector("#depositAmount");
 
 depositBtn.addEventListener("click", () => {
   // console.log(typeof depositEl.value);
-  let depositElNum = parseInt(depositEl.value)
-  let depositAmountNum = parseInt(depositAmountEl.textContent);
+  let depositElNum = parseFloat(depositEl.value)
+  let depositAmountNum = parseFloat(depositAmountEl.textContent);
   const finalOutput = depositElNum + depositAmountNum;
-  depositAmountEl.textContent = finalOutput;
+  depositAmountEl.textContent = finalOutput
 
   if(depositElNum){
-    confirm(`You want to deposit ${depositElNum}`)
+    confirm(`Confirm Your Deposit $${depositElNum}`)
   }
 })
 
