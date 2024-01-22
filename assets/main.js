@@ -16,9 +16,9 @@ let depositAmountEl = document.querySelector("#depositAmount");
 depositBtn.addEventListener("click", () => {
   // console.log(typeof depositEl.value);
   let depositElNum = parseFloat(depositEl.value)
-  let depositAmountNum = parseFloat(depositAmountEl.textContent);
+  let depositAmountNum = parseFloat(depositAmountEl.textContent)
   const finalOutput = depositElNum + depositAmountNum;
-  depositAmountEl.textContent = finalOutput
+  depositAmountEl.textContent = finalOutput.toFixed(2)
 
   if(depositElNum){
     confirm(`Confirm Your Deposit $${depositElNum}`)
